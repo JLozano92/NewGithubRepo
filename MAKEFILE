@@ -1,4 +1,4 @@
 build-and-run:
-	yasm -f elf64 -gdwarf2 my-uhm-source-file.asm -o my-uhm-source-file.o
-	ld my-uhm-source-file.o -o my-program
+	yasm -f elf64 -gdwarf2 areacode.asm -o areacode.o
+	ld areacode.o -o my-program-practice
 	@echo "Done"
