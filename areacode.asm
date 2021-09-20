@@ -23,11 +23,11 @@ FD_STDERR		equ	2
 ;;;;;;;;;
 ;Strings
 
-CALC_MESSAGE		db	"Welcome to your friendly area calculator"
-CALC_MESSAGE_LEN	equ	$-CALC_MESSAGE_LEN
+CALC_MESSAGE		db	"Welcome to your friendly area calculator",13,10
+CALC_MESSAGE_LEN	equ	$-CALC_MESSAGE
 
-;CRLF			db	13,10
-;CRLF_LEN		equ	$-CRLF
+CRLF			db	13,10
+CRLF_LEN		equ	$-CRLF
 
 
 
@@ -50,6 +50,7 @@ message:
 	mov rsi, CALC_MESSAGE
 	mov rdx, CALC_MESSAGE_LEN
 	syscall
+
 	
 goodbye:
 	mov rax, SYS_EXIT
