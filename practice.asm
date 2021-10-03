@@ -51,7 +51,7 @@ extern libPuhfessorP_inputSignedInteger64
 ;extern reverse
 
 
-glabal main:
+global main:
 
 
 main:
